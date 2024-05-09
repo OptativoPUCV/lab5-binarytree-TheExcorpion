@@ -46,7 +46,7 @@ TreeMap * createTreeMap(int (*lt) (void* key1, void* key2)) {
 
 
 void insertTreeMap(TreeMap * tree, void* key, void * value) {
-    
+    if (tree == NULL || key == NULL || value == NULL) return;
 
 }
 
