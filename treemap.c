@@ -75,11 +75,10 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
             }
             if (tree->lower_than(key, current->pair->key) == 0)
             {
-                current = current->left;
-                
+                current = current->right;
             }
             else{
-                current = current->right;
+                current = current->left;
             }      
         }
     return NULL;
